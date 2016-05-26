@@ -1,0 +1,37 @@
+// Author: Sergio Garcia Prado -> @garciparedes
+//
+// Input: a binary number n
+// Ouput: a binary number n + 1
+// Example: accepts 11 ---> 100 (3 + 1 = 4)
+//
+// Successor function of unary number of 0s Algorithm
+// for Turing Machine Simulator
+// turingmachinesimulator.com
+//
+// --------- States -----------|
+// q0  go to last position     |
+// q1  increment value         |
+// qAccept - accepting state   |
+//-----------------------------|
+
+name: Binary Successor function
+init: q0
+accept: qAccept
+
+q0,0
+q0,0,>
+
+q0,1
+q0,1,>
+
+q0,_
+q1,_,<
+
+q1, _
+qAccept, 1, -
+
+q1, 0
+qAccept, 1, -
+
+q1, 1
+q1, 0, <

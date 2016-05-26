@@ -1,0 +1,24 @@
+// Author: Sergio Garcia Prado -> @garciparedes
+//
+// Input: a unary number n represented by 0's
+// Ouput: a unary number n + 1 represented by 0's
+// Example: 000 ---> 0000 (3+1 = 4)
+//
+// Successor function of unary number of 0s Algorithm
+// for Turing Machine Simulator
+// turingmachinesimulator.com
+//
+// --------- States -----------|
+// q0  go to last zero         |
+// qAccept - accepting state   |
+//-----------------------------|
+
+name: Unary Successor function
+init: q0
+accept: qAccept
+
+q0,0
+q0,0,>
+
+q0,_
+qAccept,0,-
