@@ -1,7 +1,7 @@
 // Author: Sergio Garcia Prado -> @garciparedes
 //
 // Input: two unary numbers represented by 0's and with 1 as delimiter
-// Ouput: a unary number represented by 0's equal to product of n1 x n2
+// Output: a unary number represented by 0's equal to product of n1 x n2
 // Example: 0001001 ---> 000000 (3 * 2 = 6)
 //
 // Multiplication function of two unary numbers of 0s Algorithm
@@ -11,7 +11,7 @@
 // --------- States -----------
 // qInit        Go to end of tape and add 1 to delimit number 1
 // qReverse     Go to beginning of tape to start operations
-// q0           
+// q0
 // q1
 // q2
 // q3

@@ -1,7 +1,7 @@
 // Author: Sergio Garcia Prado -> @garciparedes
 //
 // Input: a unary number n represented by 0's
-// Ouput: a unary number n + 1 represented by 0's
+// Output: a unary number n + 1 represented by 0's
 // Example: 000 ---> 0000 (3+1 = 4)
 //
 // Successor function of unary number of 0s Algorithm

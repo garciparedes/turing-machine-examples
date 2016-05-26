@@ -1,7 +1,7 @@
 // Author: Sergio Garcia Prado -> @garciparedes
 //
 // Input: a binary number n
-// Ouput: a binary number n + 1
+// Output: a binary number n + 1
 // Example: accepts 11 ---> 100 (3 + 1 = 4)
 //
 // Successor function of binary numbers Algorithm

@@ -1,7 +1,7 @@
 // Author: Sergio Garcia Prado -> @garciparedes
 //
 // Input: a binary number n
-// Ouput: accepts if n has an odd amount of 0s
+// Output: accepts if n has an odd amount of 0s
 // Example: accepts 10010010
 //
 // Odd Amount of 0s Algorithm

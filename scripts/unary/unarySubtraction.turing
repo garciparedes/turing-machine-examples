@@ -1,0 +1,67 @@
+// Author: Sergio Garcia Prado -> @garciparedes
+//
+// Input: Two unary numbers represented by 0's and 1 as delimiter
+// Output: Positive Subtraction of two numbers in unary
+// Example: 000100 ---> 0 (3-2 = 1)
+//
+// turingmachinesimulator.com
+//
+// --------- States ----------------
+// q0           Go to the end of tape
+// q1           Remove las zero of tape
+// q2           Go to the beginning of tape
+// q3           Remove first one of tape
+// qAccept      Accepting state
+//----------------------------------
+
+name: Unary sum of two numbers
+init: q0
+accept: qAccept
+
+// q0
+// **************************************
+q0, 0
+q0, 0, >
+
+q0, 1
+q0, 1, >
+
+q0, _
+q1, _, <
+// **************************************
+
+
+
+// q1
+// **************************************
+q1, 0
+q2, _, <
+
+q1, 1
+qAccept, _, -
+// **************************************
+
+
+
+// q2
+// **************************************
+q2, 0
+q2, 0, <
+
+q2, 1
+q2, 1, <
+
+q2, _
+q3, _, >
+// **************************************
+
+
+
+// q3
+// **************************************
+q3, 0
+q0, _, >
+
+q3, 1
+qAccept, _, -
+// **************************************
