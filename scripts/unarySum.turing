@@ -1,0 +1,36 @@
+// Author: Sergio Garcia Prado -> @garciparedes
+//
+// Input: Two unary numbers represented by 0's and 1 as delimiter
+// Ouput: Sum of two numbers in unary
+// Example: 000100 ---> 000000 (3+2 = 5)
+//
+// turingmachinesimulator.com
+//
+// --------- States ----------------|
+// q0  reading first operand        |
+// q1  reading result +1            |
+// q2  finding las digit to delete  |
+// qAccept - accepting state        |
+//----------------------------------|
+
+name: Unary sum of two numbers
+init: q0
+accept: qAccept
+
+q0,0
+q0,0,>
+
+q0,1
+q1,0,>
+
+q0,_
+qAccept,_,-
+
+q1,0
+q1,0,>
+
+q1,_
+q2,_,<
+
+q2,0
+qAccept,_,-
