@@ -4,7 +4,7 @@
 // Ouput: a binary number n + 1
 // Example: accepts 11 ---> 100 (3 + 1 = 4)
 //
-// Successor function of unary number of 0s Algorithm
+// Successor function of binary numbers Algorithm
 // for Turing Machine Simulator
 // turingmachinesimulator.com
 //
